@@ -20,7 +20,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoTable.delegate = self
+        photoTable.delegate = self // what's this for and why didn't we use it in flix?
         photoTable.dataSource = self
         
         print("start call to api")
