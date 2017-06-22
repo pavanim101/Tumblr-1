@@ -9,9 +9,15 @@
 import UIKit
 
 class PhotoDetailsViewController: UIViewController {
+    
+    var image: UIImage!
+    
+    @IBOutlet weak var tumblrImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tumblrImageView.image = image
 
         // Do any additional setup after loading the view.
     }
